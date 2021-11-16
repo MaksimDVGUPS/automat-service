@@ -1,0 +1,630 @@
+// Импорт шаблона
+@import '_template.scss';
+
+// Баннеры на первом экране
+.banner {
+    & .slick-dots {
+        bottom: 30px;
+
+        & li {
+            width: 50px;
+            height: 2px;
+            margin-right: 17px;
+            padding: 20px 0;
+
+            & button {
+                background: rgba(255, 234, 217, 0.3);
+                padding: 0;
+                width: 50px;
+                height: 2px;
+            }
+
+            &.slick-active button,
+            &:hover button {
+                background: #FE8624;
+            }
+        }
+    }
+
+    & .slick-slide {
+        height: 655px;
+
+        & img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+
+    &__item {
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+
+        & .container {
+            height: 100%;
+            position: relative;
+        }
+    }
+
+    &__filter {
+        background: #000000;
+        opacity: .5;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+    }
+
+    &__caption {
+        position: absolute;
+        bottom: 54px;
+        right: 15px;
+        max-width: 513px;
+        text-align: right;
+    }
+
+    &__title {
+        color: #fff;
+        font-size: 2.222rem;
+        font-weight: bold;
+        margin: 0 0 13px;
+        max-width: 513px;
+        text-transform: uppercase;
+    }
+
+    &__txt {
+        color: #fff;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 27px;
+        margin-left: auto;
+        max-width: 400px;
+    }
+
+    &__btn {
+        display: inline-block;
+    }
+}
+
+// Наши проекты
+.projects {
+    margin: 50px 0;
+
+    &__wrapper {
+        display: grid;
+        grid-gap: 10px;
+        grid-template: 1fr 1fr / 209fr 209fr 295fr 209fr 209fr;
+        grid-template-areas:
+            "project_1 project_1 project_4 project_5 project_6"
+            "project_2 project_3 project_4 project_7 project_7";
+        margin-top: 30px;
+
+        img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+
+    #project {
+        &_1 {grid-area: project_1;}
+        &_2 {grid-area: project_2;}
+        &_3 {grid-area: project_3;}
+        &_4 {grid-area: project_4;}
+        &_5 {grid-area: project_5;}
+        &_6 {grid-area: project_6;}
+        &_7 {grid-area: project_7;}
+    }
+}
+
+// Наши услуги
+.services {
+    &__short {
+        background-image: url(../img/index/services__bg.jpg);
+        background-size: cover;
+        padding: 50px 0;
+    }
+
+    &__header {
+        align-items: center;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    &__title {
+        color: #ffffff;
+    }
+
+    &__divider {
+        background: #ffffff;
+        margin: 0 20px;
+        height: 28px;
+        width: 1px;
+    }
+
+    &__presentation {
+        align-items: center;
+        color: #FFFFFF;
+        display: flex;
+        font-size: 1rem;
+        line-height: 139%;
+        text-decoration-line: underline;
+        text-transform: uppercase;
+
+        &:hover {text-decoration-line: none;}
+
+        img {
+            height: 26px;
+            width: 26px;
+            margin-right: 8px;
+        }
+    }
+
+    &__wrapper {
+        align-items: stretch;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    &__item {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        margin-top: 45px;
+        width: 25%;
+    }
+
+    &__icon {
+        height: 70px;
+        width: 70px;
+        transition: .3s;
+
+        &:hover {transform: scale(1.1);}
+    }
+
+    &__description {
+        color: #ffffff;
+        font-weight: bold;
+        font-size: 1rem;
+        line-height: 139%;
+        text-align: center;
+        text-transform: uppercase;
+        margin-top: 20px;
+        width: 100%;
+
+        & span {
+            color: #F9BA48;
+        }
+    }
+
+    &__long {
+        background: #F0F3F6;
+        padding: 50px 0;
+
+        p {
+            margin-top: 15px;
+
+            a {
+                color: #2B4767;
+                font-weight: bold;
+            }
+        }
+
+        ul {
+            margin-top: 24px;
+        }
+
+        li {
+            position: relative;
+            margin-top: 10px;
+            margin-left: 70px;
+        }
+
+        li::before {
+            background: #F9BA48;
+            content: '';
+            position: absolute;
+            top: 10px;
+            left: -46px;
+            height: 1px;
+            width: 28px;
+        }
+    }
+
+    &__phone {
+        color: #2B4767;
+        font-weight: bold;
+    }
+}
+
+// Преимущества
+.advantages {
+    padding: 50px 0;
+
+    &__title {
+        margin-bottom: 51px;
+    }
+
+    &__wrapper {
+        align-items: stretch;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    &__item {
+        margin-top: 20px;
+        width: 16.666%;
+    }
+
+    &__icon {
+        height: 72px;
+        width: 72px;
+        transition: .3s;
+
+        &:hover {transform: scale(1.1);}
+    }
+
+    &__description {
+        color: #45484D;
+        line-height: 139%;
+        margin-top: 30px;
+        width: 170px;
+    }
+}
+
+// Наши клиенты
+.clients {
+    padding: 50px 0;
+
+    &__filter {
+        margin: 19px 0 26px;
+        display: flex;
+        flex-wrap: wrap;
+
+        a {
+            color: #FF9000;
+            display: block;
+            font-size: 16px;
+            line-height: 22px;
+            margin-right: 20px;
+            text-decoration-line: underline;
+
+            &:hover {text-decoration-line: none;}
+
+            &.active {
+                color: #000000;
+                font-weight: bold;
+                text-decoration-line: none;
+            }
+        }
+    }
+
+    &__wrapper {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    &__item {
+        align-items: center;
+        border: 1px solid #E2E2E2;
+        display: flex;
+        justify-content: center;
+        padding: 10px;
+        height: 195px;
+        width: 195px;
+    }
+
+    &__img {
+        height: auto;
+        width: fit-content;
+        transition: .3s;
+
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+}
+
+// Новости
+.news {
+    background: #F0F3F6;
+    padding: 50px 0;
+
+    &__wrapper {
+        align-items: stretch;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    &__item {
+        margin-top: 29px;
+        position: relative;
+        width: 32%;
+
+        img {
+            height: auto;
+            width: 100%;
+        }
+
+        &-list {
+            background: #FFFFFF;
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+        }
+    }
+
+    &__subitem {
+        display: flex;
+        margin-top: 20px;
+
+        img {
+            margin-right: 20px;
+            height: 62px;
+            width: 70px;
+        }
+
+        .news__title {
+            font-size: .777rem;
+            margin-top: 10px;
+        }
+    }
+
+    &__date {
+        border: 1px solid #FF9000;
+        border-radius: 5px;
+        color: #FF9000;
+        font-size: .666rem;
+        padding: 3px 10px;
+        width: fit-content;
+    }
+
+    &__button {
+        border: 1px solid #FF9000;
+        color: #FF9000;
+        text-align: center;
+        justify-content: center;
+        line-height: 37px;
+        height: 40px;
+        width: 200px;
+        margin: 20px auto 0;
+    }
+
+    &__tag {
+        background: #FFFFFF;
+        color: #FF9000;
+        font-size: .777rem;
+        position: absolute;
+        top: 20px;
+        left: 0;
+        letter-spacing: 0.05em;
+        padding: 6px 15px;
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+    &__title {
+        color: #FF9000;
+        font-weight: bold;
+        font-size: 1rem;
+        line-height: 139%;
+        margin-top: 20px;
+    }
+
+    &__description {
+        color: #45484D;
+        font-size: .777rem;
+        line-height: 105%;
+        margin-top: 10px;
+    }
+}
+
+// Фотогалерея
+.gallery {
+    padding: 50px 0;
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-evenly;
+        position: relative;
+    }
+
+    &__list {
+        width: auto;
+        display: flex;
+        justify-content: flex-start;
+        overflow-x: hidden;
+    }
+
+    &__el {
+        display: block;
+        flex: 0 0 auto;
+        margin: 20px 10px 0 0;
+        height: auto;
+        width: 371px;
+    }
+
+    &__controls {
+        display: flex;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%, 0);
+    }
+
+    &__control {
+        align-items: center;
+        background: #FFFFFF;
+        border: none;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        margin: 0 1px;
+        padding: 8px;
+
+        img {
+            height: 40px;
+            width: 40px;
+        }
+    }
+}
+
+// Наша команда
+.team {
+    background: #F0F3F6;
+    padding: 50px 0;
+
+    &__title {
+        margin-bottom: 30px;
+    }
+
+    &__wrapper {
+        align-items: stretch;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    &__item {
+        align-items: center;
+        background: #FFFFFF;
+        display: flex;
+        margin-top: 30px;
+        padding: 63px 43px;
+        width: 49%;
+    }
+
+    &__img {
+        margin-right: 45px;
+        height: 182px;
+        width: 182px;
+        transition: .3s;
+
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+
+    &__name {
+        color: #2B4767;
+        font-weight: bold;
+        font-size: 1.333rem;
+        line-height: 137.5%;
+        text-transform: uppercase;
+    }
+
+    &__position {
+        color: #45484D;
+        font-weight: bold;
+        font-size: 1rem;
+        line-height: 150%;
+        margin-top: 10px;
+    }
+
+    &__mail {
+        color: #FF9000;
+        font-size: .888rem;
+        text-decoration-line: underline;
+        margin-top: 10px;
+
+        &:hover {text-decoration-line: none;}
+    }
+}
+
+@media screen and (max-width: 1199px) {
+    .home__el {height: auto;}
+
+    .advantages {
+        &__item {
+            width: 33.333%;
+        }
+    }
+
+    .team {
+        &__item {margin-top: 10px; padding: 30px 30px; width: 100%;}
+        &__img {height: 100px;width: 100px;}
+        &__name {font-size: 1rem;}
+        &__position {font-size: .888rem;}
+    }
+}
+
+@media screen and (max-width: 830px) {
+    .services__item {width: 50%;}
+    .services__description {font-size: 15px;}
+
+    .clients {
+        &__item {
+            height: 120px;
+            width: 120px;
+        }
+    }
+
+    .news__item {width: 49%;}
+    .gallery__el {width: 200px;}
+}
+
+@media screen and (max-width: 600px) {
+    .services {
+        &__title {width: 100%;}
+        &__divider {display: none;}
+        &__presentation {margin-top: 20px;}
+    }
+
+    .advantages {
+        &__title {margin-bottom: 0;}
+        &__item {width: 50%;}
+        &__description {margin-top: 15px; width: 90%;}
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .banner {
+        & .slick-slide {height: 467px;}
+        &__title {font-size: 1.5rem;}
+        &__txt {font-size: 1.1rem;}
+        & .slick-dots li {width: 25px;}
+        & .slick-dots li button {width: 25px;}
+    }
+
+    .projects {
+        &__wrapper {
+            grid-template: repeat(6, calc(50vw - 30px)) / repeat(2, calc(50vw - 30px));
+            grid-template-areas: 
+                "project_1 project_1"
+                "project_2 project_3"
+                "project_4 project_4"
+                "project_4 project_4"
+                "project_5 project_6"
+                "project_7 project_7";
+        }
+    }
+
+    .services li {margin-left: 28px;}
+    .services li::before {left: -28px; width: 15px;}
+    .services .orange-button {width: 100%;}
+
+    .clients {
+        &__item {
+            height: 68px;
+            width: 68px;
+        }
+    }
+
+    .news__wrapper {flex-direction: column;}
+    .news__item {width: 100%;}
+
+    .gallery__el {width: 104px;}
+    .team {
+        &__item {padding: 20px 7px;}
+        &__img {margin-right: 10px; height: 70px; width: 70px;}
+        &__name {font-size: .875rem;}
+        &__position {font-size: .75rem;}
+        &__mail {font-size: .75rem;}
+    }
+}

@@ -1,0 +1,97 @@
+.main-content {
+  &__wrapper {
+    width: 865px;
+    margin-left: auto;
+    margin-bottom: 80px;
+  }
+
+  &__header {
+    align-items: baseline;
+    display: flex;
+    justify-content: space-between;
+    margin: 40px 0 28px;
+  }
+
+  &__h1 {
+    color: #000000;
+    font-weight: bold;
+    font-size: 1.333rem;
+    line-height: 137.5%;
+    margin-bottom: 23px;
+    text-transform: uppercase;
+
+    & + * {
+      margin-top: 23px !important;
+    }
+  }
+}
+
+// Наши клиенты
+.clients {
+  padding: 50px 0;
+
+  &__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__item {
+    align-items: center;
+    border: 1px solid #E2E2E2;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    height: 195px;
+    width: 25%;
+  }
+
+  &__img {
+    height: auto;
+    width: fit-content;
+    transition: .3s;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .nav__open {top: 0;}
+
+  .main-content {
+    &__wrapper {
+      width: 100%;
+      margin-left: unset;
+    }
+
+    &__header {
+      margin-top: 60px;
+      margin-bottom: 25px;
+    }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .clients {
+    &__item {
+      width: 33.333%;
+    }
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .main-content {
+    &__wrapper {margin-bottom: 40px;}
+    &__h1 {font-size: 18px;}
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .clients {
+    &__item {
+      height: 140px;
+      width: 50%;
+    }
+  }
+}

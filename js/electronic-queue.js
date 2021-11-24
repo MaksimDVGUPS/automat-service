@@ -35,6 +35,10 @@ $(function() {
     })
   }
 
+  $('.slider__carousel').on('init', () => {
+    setSum()
+  })
+
   // Слайдер в калькуляторе
   $('.slider__carousel').slick({
     dots: false,
@@ -53,7 +57,11 @@ $(function() {
             }
         }
     ],
-});
+  });
+
+  $('.slider__carousel').on('afterChange', () => {
+    setSum()
+  })
 
   // Ползунок с ценой в фильтре
   $( "#price-slider" ).slider({
@@ -132,3 +140,112 @@ function getTextWidth(text, font) {
   var metrics = context.measureText(text);
   return metrics.width;
 }
+
+// Увеличить количество в слайдере
+$(document).on('click', '.slider__calc-button:last-child()', function () {
+  const count = new Number($(this).prev().text()) + 1
+  
+  $(this).prev().text(count)
+  const price = new Number($(this).parent('.slider__calc').prev().text().replace(/\s+/g, '')) * count
+
+  $(this).closest('.slider__content').next().find('.slider__footer-sum span').text(price.toLocaleString())
+
+  setSum()
+})
+
+// Уменьшить количество в слайдере
+$(document).on('click', '.slider__calc-button:first-child()', function () {
+  let count = new Number($(this).next().text())
+
+  if (count > 1) {
+    count--
+    $(this).next().text(count)
+
+    const price = new Number($(this).parent('.slider__calc').prev().text().replace(/\s+/g, '')) * count
+
+    $(this).closest('.slider__content').next().find('.slider__footer-sum span').text(price.toLocaleString())
+
+    setSum()
+  }
+})
+
+// Увеличить количество в калькуляторе
+$(document).on('click', '.calc__button:last-child()', function () {
+  const count = new Number($(this).prev().text()) + 1
+
+  $(this).prev().text(count)
+  const price = new Number($(this).parent('.calc__count').prev().text().replace(/\s+/g, '')) * count
+
+  $(this).parent('.calc__count').next().find('span').text(price.toLocaleString())
+
+  setSum()
+})
+
+// Уменьшить количество в калькуляторе
+$(document).on('click', '.calc__button:first-child()', function () {
+  let count = new Number($(this).next().text())
+
+  if (count > 0) {
+    count--
+    $(this).next().text(count)
+
+    const price = new Number($(this).parent('.calc__count').prev().text().replace(/\s+/g, '')) * count
+
+    $(this).parent('.calc__count').next().find('span').text(price.toLocaleString())
+
+    setSum()
+  }
+})
+
+// Установить итоговую сумму в калькуляторе
+function setSum () {
+  let sum = 0
+
+  sum = new Number($('.slider__carousel .slick-current .slider__footer-sum span').text().replace(/\s+/g, ''))
+
+  $('.calc__sum span').each(function () {
+    sum += new Number($(this).text().replace(/\s+/g, ''))
+  })
+
+  $('.calc__fullprice-value span').text(sum.toLocaleString())
+}
+
+// Обработка ввода в интерактивном помощнике
+$('.helper__button, .helper__button-no').on('click', function () {
+  const helperItem = $(this).closest('.helper__item')
+
+  if ($(this).attr('data-value')) {
+    helperItem.find('.helper__value').text($(this).attr('data-value'))
+  } else {
+    const value = $(this).prev().val()
+
+    // Валидация
+    if (value && value >= 0 && value % 1 === 0) {
+      helperItem.find('.helper__value').text(value)
+    } else {
+      if (!helperItem.find('.helper__error').length) {
+        helperItem.append(`<div class="helper__error">Введите целое неотрицательное число</div>`)
+      }
+      return
+    }
+  }
+
+  helperItem.find('.helper__error').remove()
+  helperItem.addClass('saved')
+  helperItem.next().addClass('active')
+})
+
+// Редактирование ответа в интерактивном помощнике
+$('.helper__change').on('click', function () {
+  $(this).closest('.helper__item').removeClass('saved')
+})
+
+$('.calc__more').each(function (index) {
+  $(this).on('click', () => {
+    $('.modal')[index].classList.add('active')
+  })
+})
+
+$('.modal__outside, .modal__close').on('click', () => {
+  $('.modal').removeClass('active')
+})

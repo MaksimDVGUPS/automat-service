@@ -15,20 +15,32 @@
     <header class="section header" id="header">
         <div class="header__contacts">
             <div class="container header__container">
-                <a href="mailto:sales@automat-service.ru" class="header__contact mail">
-                    <img src="img/general/mail.svg" alt="Почта">
-                    SALES@AUTOMAT-SERVICE.RU
-                </a>
-                <div class="header__divider"></div>
-                <a href="tel:+78123090236" class="header__contact">
-                    <img src="img/general/phone.svg" alt="Телефон">
-                    +7 (812) 309-02-36
-                </a>
-                <div class="header__divider"></div>
-                <a href="tel:88001004778" class="header__contact">
-                    <img src="img/general/phone.svg" alt="Телефон">
-                    8-800-100-47-78
-                </a>
+                <div class="header__left">
+                    <div class="header__left-item">
+                        <img src="img/general/header_left-1.svg" alt="Терминалы Российского производства">
+                        <span>Терминалы Российского производства</span>
+                    </div>
+                    <div class="header__left-item">
+                        <img src="img/general/header_left-2.svg" alt="На базе отечественных процессоров">
+                        <span>На базе отечественных процессоров</span>
+                    </div>
+                </div>
+                <div class="header__right">
+                    <a href="mailto:sales@automat-service.ru" class="header__contact mail">
+                        <img src="img/general/mail.svg" alt="Почта">
+                        SALES@AUTOMAT-SERVICE.RU
+                    </a>
+                    <div class="header__divider"></div>
+                    <a href="tel:+78123090236" class="header__contact">
+                        <img src="img/general/phone.svg" alt="Телефон">
+                        +7 (812) 309-02-36
+                    </a>
+                    <div class="header__divider"></div>
+                    <a href="tel:88001004778" class="header__contact">
+                        <img src="img/general/phone.svg" alt="Телефон">
+                        8-800-100-47-78
+                    </a>
+                </div>
             </div>
         </div>
         <div class="container header__main">
@@ -51,8 +63,8 @@
                             <a href="#">О компании</a>
                             <img src="img/general/arrow_down.svg" alt="Стрелка вниз" class="header__dropdown">
                             <div class="header__drop">
-                                <a href="about.html">О компании</a>
-                                <a href="clients.html">Наши клиенты</a>
+                                <a href="#">О компании</a>
+                                <a href="#">Наши клиенты</a>
                                 <a href="#">Доставка и оплата</a>
                                 <a href="#">Сервис</a>
                                 <a href="industry-solution.html">Отраслевые решения</a>
@@ -241,7 +253,7 @@
                                             Итоговая цена:
                                         </span>
                                         <div class="slider__footer-sum">
-                                            <span>125 000</span>
+                                            <span>96 000</span>
                                             <img src="img/inform-kioski/price.svg" alt="Рубль">
                                             <img src="img/electronic-queue/price_white.svg" alt="Рубль" class="white">
                                         </div>
@@ -277,7 +289,7 @@
                                             Итоговая цена:
                                         </span>
                                         <div class="slider__footer-sum">
-                                            <span>125 000</span>
+                                            <span>96 000</span>
                                             <img src="img/inform-kioski/price.svg" alt="Рубль">
                                             <img src="img/electronic-queue/price_white.svg" alt="Рубль" class="white">
                                         </div>
@@ -313,7 +325,7 @@
                                             Итоговая цена:
                                         </span>
                                         <div class="slider__footer-sum">
-                                            <span>125 000</span>
+                                            <span>96 000</span>
                                             <img src="img/inform-kioski/price.svg" alt="Рубль">
                                             <img src="img/electronic-queue/price_white.svg" alt="Рубль" class="white">
                                         </div>
@@ -349,7 +361,7 @@
                                             Итоговая цена:
                                         </span>
                                         <div class="slider__footer-sum">
-                                            <span>125 000</span>
+                                            <span>96 000</span>
                                             <img src="img/inform-kioski/price.svg" alt="Рубль">
                                             <img src="img/electronic-queue/price_white.svg" alt="Рубль" class="white">
                                         </div>
@@ -392,11 +404,11 @@
                                         <div class="filter__input-between">
                                             <div class="filter__input-container">
                                                 <input type="number" id="resolution-start">
-                                                <span class="filter__input-suffix" id="resolution">"</span>
+                                                <span class="filter__input-suffix filter__resolution">"</span>
                                             </div>
                                             <div class="filter__input-container">
                                                 <input type="number" id="resolution-end">
-                                                <span class="filter__input-suffix" id="resolution">"</span>
+                                                <span class="filter__input-suffix filter__resolution">"</span>
                                             </div>
                                         </div>
                                         <div class="filter__input-slider" id="resolution-slider"></div>
@@ -448,7 +460,7 @@
                                             Оперативная память
                                         </div>
                                         <div class="filter__input-container">
-                                            <select name="sensor" id="sensor" class="filter__input-select">
+                                            <select name="ozu" id="ozu" class="filter__input-select">
                                                 <option value="Все варианты">Все варианты</option>
                                                 <option value="Все варианты">1 вариант</option>
                                                 <option value="Все варианты">2 вариант</option>
@@ -460,7 +472,7 @@
                                             Жесткий диск
                                         </div>
                                         <div class="filter__input-container">
-                                            <select name="sensor" id="sensor" class="filter__input-select">
+                                            <select name="memory" id="memory" class="filter__input-select">
                                                 <option value="Все варианты">Все варианты</option>
                                                 <option value="Все варианты">1 вариант</option>
                                                 <option value="Все варианты">2 вариант</option>
@@ -755,14 +767,26 @@
                         <div class="helper__item active">
                             <div class="helper__disable"></div>
                             <div class="helper__header">
-                                <div class="helper__title">количество киосков: <span>1</span></div>
+                                <div class="helper__title">количество киосков: <span class="helper__value"></span></div>
                                 <div class="helper__change">Изменить</div>
                             </div>
+                            <div class="helper__divider"></div>
+                            <div class="helper__question">
+                                Сколько киосков необходимо установить?
+                            </div>
+                            <div class="helper__action">
+                                Введите количество киосков:
+                            </div>
+                            <div class="helper__footer">
+                                <input type="number" class="helper__input" value="0" min="0">
+                                <button class="helper__button">Продолжить</button>
+                            </div>
                         </div>
-                        <div class="helper__item active">
+                        <div class="helper__item">
                             <div class="helper__disable"></div>
                             <div class="helper__header">
-                                <div class="helper__title">количество специалистов</div>
+                                <div class="helper__title">количество специалистов: <span class="helper__value"></span></div>
+                                <div class="helper__change">Изменить</div>
                             </div>
                             <div class="helper__divider"></div>
                             <div class="helper__question">
@@ -772,14 +796,15 @@
                                 Введите количество специалистов:
                             </div>
                             <div class="helper__footer">
-                                <input type="number" class="helper__input" value="0">
+                                <input type="number" class="helper__input" value="0" min="0">
                                 <button class="helper__button">Продолжить</button>
                             </div>
                         </div>
                         <div class="helper__item">
                             <div class="helper__disable"></div>
                             <div class="helper__header">
-                                <div class="helper__title">светодиодные табло</div>
+                                <div class="helper__title">светодиодные табло: <span class="helper__value"></span></div>
+                                <div class="helper__change">Изменить</div>
                             </div>
                             <div class="helper__divider"></div>
                             <div class="helper__question">
@@ -789,14 +814,15 @@
                                 Введите количество табло:
                             </div>
                             <div class="helper__footer">
-                                <input type="number" class="helper__input" value="0">
+                                <input type="number" class="helper__input" value="0" min="0">
                                 <button class="helper__button">Продолжить</button>
                             </div>
                         </div>
                         <div class="helper__item">
                             <div class="helper__disable"></div>
                             <div class="helper__header">
-                                <div class="helper__title">информационные экраны</div>
+                                <div class="helper__title">информационные экраны: <span class="helper__value"></span></div>
+                                <div class="helper__change">Изменить</div>
                             </div>
                             <div class="helper__divider"></div>
                             <div class="helper__question">
@@ -806,68 +832,74 @@
                                 Введите количество экранов:
                             </div>
                             <div class="helper__footer">
-                                <input type="number" class="helper__input" value="0">
+                                <input type="number" class="helper__input" value="0" min="0">
                                 <button class="helper__button">Продолжить</button>
                             </div>
                         </div>
                         <div class="helper__item">
                             <div class="helper__disable"></div>
                             <div class="helper__header">
-                                <div class="helper__title">вызов клиентов</div>
+                                <div class="helper__title">вызов клиентов: <span class="helper__value"></span></div>
+                                <div class="helper__change">Изменить</div>
                             </div>
                             <div class="helper__divider"></div>
                             <div class="helper__question">
                                 Можно ли установить бесплатную утилиту для вызова клиентов непосредственно на компьютер специалиста, или необходимо использовать отдельный аппаратный пульт вызова?
                             </div>
                             <div class="helper__footer">
-                                <button class="helper__button">Да</button>
-                                <button class="helper__button-no">Нет</button>
+                                <button class="helper__button" data-value="Да">Да</button>
+                                <button class="helper__button-no" data-value="Нет">Нет</button>
                             </div>
                         </div>
                         <div class="helper__item">
                             <div class="helper__disable"></div>
                             <div class="helper__header">
-                                <div class="helper__title">система голосового оповещения</div>
+                                <div class="helper__title">система голосового оповещения: <span class="helper__value"></span></div>
+                                <div class="helper__change">Изменить</div>
                             </div>
                             <div class="helper__divider"></div>
                             <div class="helper__question">
                                 Требуется ли система голосового оповещения клиентов о приглашении к обслуживанию?
                             </div>
                             <div class="helper__footer">
-                                <button class="helper__button">Да</button>
-                                <button class="helper__button-no">Нет</button>
+                                <button class="helper__button" data-value="Да">Да</button>
+                                <button class="helper__button-no" data-value="Нет">Нет</button>
                             </div>
                         </div>
                         <div class="helper__item">
                             <div class="helper__disable"></div>
                             <div class="helper__header">
-                                <div class="helper__title">Система СМС оповещения включена</div>
+                                <div class="helper__title">Система СМС оповещения включена: <span class="helper__value"></span></div>
+                                <div class="helper__change">Изменить</div>
                             </div>
                             <div class="helper__divider"></div>
                             <div class="helper__question">
                                 Требуется ли система SMS информирования посетителей о приближающейся очереди?
                             </div>
                             <div class="helper__footer">
-                                <button class="helper__button">Да</button>
-                                <button class="helper__button-no">Нет</button>
+                                <button class="helper__button" data-value="Да">Да</button>
+                                <button class="helper__button-no" data-value="Нет">Нет</button>
                             </div>
                         </div>
                         <div class="helper__item">
                             <div class="helper__disable"></div>
                             <div class="helper__header">
-                                <div class="helper__title">Клиенты могут оставлять отзывы</div>
+                                <div class="helper__title">Клиенты могут оставлять отзывы: <span class="helper__value"></span></div>
+                                <div class="helper__change">Изменить</div>
                             </div>
                             <div class="helper__divider"></div>
                             <div class="helper__question">
                                 Хотите ли вы, чтобы посетители смогли отставлять отзывы о качестве обслуживания?
                             </div>
                             <div class="helper__footer">
-                                <button class="helper__button">Да</button>
-                                <button class="helper__button-no">Нет</button>
+                                <button class="helper__button" data-value="Да">Да</button>
+                                <button class="helper__button-no" data-value="Нет">Нет</button>
                             </div>
                         </div>
                     </form>
                 </div>
+
+                <!-- Таблица с калькулятором -->
                 <div class="calc active" id="calc">
                     <div class="calc__block">
                         <h3 class="calc__title">
@@ -885,7 +917,7 @@
                             <div class="calc__row">
                                 <span class="calc__name">
                                     СТАРТОВЫЙ ПАКЕТ “АС СИСТЕМА УПРАВЛЕНИЯ ОЧЕРЕДЬЮ” 5 ОПЕРАТОРОВ
-                                    <a href="#" target="_blank">Подробнее</a>
+                                    <span class="calc__more">Подробнее</span>
                                 </span>
                                 <div class="calc__right">
                                     <div class="calc__price">
@@ -904,23 +936,21 @@
                                         </div>
                                     </div>
                                     <div class="calc__sum">
-                                        <span>
-                                            0
-                                            <img src="img/inform-kioski/price.svg" alt="Рубль">
-                                        </span>
+                                        <span>0</span>
+                                        <img src="img/inform-kioski/price.svg" alt="Рубль">
                                     </div>
                                 </div>
                             </div>
 
                             <div class="calc__row">
                                 <span class="calc__name">
-                                    СТАРТОВЫЙ ПАКЕТ “АС СИСТЕМА УПРАВЛЕНИЯ ОЧЕРЕДЬЮ” 5 ОПЕРАТОРОВ
-                                    <a href="#">Подробнее</a>
+                                    БАЗОВЫЙ ПАКЕТ «АС СИСТЕМА УПРАВЛЕНИЯ ОЧЕРЕДЬЮ» 20 ОПЕРАТОРОВ
+                                    <span class="calc__more">Подробнее</span>
                                 </span>
                                 <div class="calc__right">
                                     <div class="calc__price">
                                         <span>
-                                            30 000
+                                            60 000
                                             <img src="img/inform-kioski/price.svg" alt="Рубль">
                                         </span>
                                     </div>
@@ -934,23 +964,22 @@
                                         </div>
                                     </div>
                                     <div class="calc__sum">
-                                        <span>
-                                            0
-                                            <img src="img/inform-kioski/price.svg" alt="Рубль">
-                                        </span>
+                                        <span>0</span>
+                                        <img src="img/inform-kioski/price.svg" alt="Рубль">
                                     </div>
                                 </div>
                             </div>
 
                             <div class="calc__row">
                                 <span class="calc__name">
-                                    СТАРТОВЫЙ ПАКЕТ “АС СИСТЕМА УПРАВЛЕНИЯ ОЧЕРЕДЬЮ” 5 ОПЕРАТОРОВ
-                                    <a href="#">Подробнее</a>
+                                    РАСШИРЕННЫЙ ПАКЕТ "АС СИСТЕМА УПРАВЛЕНИЯ ОЧЕРЕДЬЮ" ДО 50 ОДНОВРЕМЕННО 
+                                    РАБОТАЮЩИХ ОПЕРАТОРОВ
+                                    <span class="calc__more">Подробнее</span>
                                 </span>
                                 <div class="calc__right">
                                     <div class="calc__price">
                                         <span>
-                                            30 000
+                                            100 000
                                             <img src="img/inform-kioski/price.svg" alt="Рубль">
                                         </span>
                                     </div>
@@ -964,23 +993,21 @@
                                         </div>
                                     </div>
                                     <div class="calc__sum">
-                                        <span>
-                                            0
-                                            <img src="img/inform-kioski/price.svg" alt="Рубль">
-                                        </span>
+                                        <span>0</span>
+                                        <img src="img/inform-kioski/price.svg" alt="Рубль">
                                     </div>
                                 </div>
                             </div>
 
                             <div class="calc__row">
                                 <span class="calc__name">
-                                    СТАРТОВЫЙ ПАКЕТ “АС СИСТЕМА УПРАВЛЕНИЯ ОЧЕРЕДЬЮ” 5 ОПЕРАТОРОВ
-                                    <a href="#">Подробнее</a>
+                                    МОДУЛЬ РАСШИРЕННОЙ СТАТИСТИКИ
+                                    <span class="calc__more">Подробнее</span>
                                 </span>
                                 <div class="calc__right">
                                     <div class="calc__price">
                                         <span>
-                                            30 000
+                                            18 000
                                             <img src="img/inform-kioski/price.svg" alt="Рубль">
                                         </span>
                                     </div>
@@ -994,23 +1021,21 @@
                                         </div>
                                     </div>
                                     <div class="calc__sum">
-                                        <span>
-                                            0
-                                            <img src="img/inform-kioski/price.svg" alt="Рубль">
-                                        </span>
+                                        <span>0</span>
+                                        <img src="img/inform-kioski/price.svg" alt="Рубль">
                                     </div>
                                 </div>
                             </div>
 
                             <div class="calc__row">
                                 <span class="calc__name">
-                                    СТАРТОВЫЙ ПАКЕТ “АС СИСТЕМА УПРАВЛЕНИЯ ОЧЕРЕДЬЮ” 5 ОПЕРАТОРОВ
-                                    <a href="#">Подробнее</a>
+                                    МОБИЛЬНОЕ ПРИЛОЖЕНИЕ "АС СИСТЕМА УПРАВЛЕНИЯ ОЧЕРЕДЬЮ"
+                                    <span class="calc__more">Подробнее</span>
                                 </span>
                                 <div class="calc__right">
                                     <div class="calc__price">
                                         <span>
-                                            30 000
+                                            60 000
                                             <img src="img/inform-kioski/price.svg" alt="Рубль">
                                         </span>
                                     </div>
@@ -1024,12 +1049,970 @@
                                         </div>
                                     </div>
                                     <div class="calc__sum">
+                                        <span>0</span>
+                                        <img src="img/inform-kioski/price.svg" alt="Рубль">
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="calc__row">
+                                <span class="calc__name">
+                                    МОДУЛЬ "БЕРЕЖЛИВАЯ ПОЛИКЛИНИКА" БАЗОВАЯ ВЕРСИЯ
+                                    <span class="calc__more">Подробнее</span>
+                                </span>
+                                <div class="calc__right">
+                                    <div class="calc__price">
                                         <span>
-                                            0
+                                            80 000
                                             <img src="img/inform-kioski/price.svg" alt="Рубль">
                                         </span>
                                     </div>
+                                    <div class="calc__count">
+                                        <div class="calc__button">
+                                            <img src="img/electronic-queue/minus.svg" alt="Минус">
+                                        </div>
+                                        <span>0</span>
+                                        <div class="calc__button">
+                                            <img src="img/electronic-queue/plus.svg" alt="Плюс">
+                                        </div>
+                                    </div>
+                                    <div class="calc__sum">
+                                        <span>0</span>
+                                        <img src="img/inform-kioski/price.svg" alt="Рубль">
+                                    </div>
                                 </div>
+                            </div>
+                            <div class="calc__row">
+                                <span class="calc__name">
+                                    МОДУЛЬ “РЕКЛАМЫ НА ТАЛОНАХ”
+                                    <span class="calc__more">Подробнее</span>
+                                </span>
+                                <div class="calc__right">
+                                    <div class="calc__price">
+                                        <span>
+                                            24 000
+                                            <img src="img/inform-kioski/price.svg" alt="Рубль">
+                                        </span>
+                                    </div>
+                                    <div class="calc__count">
+                                        <div class="calc__button">
+                                            <img src="img/electronic-queue/minus.svg" alt="Минус">
+                                        </div>
+                                        <span>0</span>
+                                        <div class="calc__button">
+                                            <img src="img/electronic-queue/plus.svg" alt="Плюс">
+                                        </div>
+                                    </div>
+                                    <div class="calc__sum">
+                                        <span>0</span>
+                                        <img src="img/inform-kioski/price.svg" alt="Рубль">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="calc__row">
+                                <span class="calc__name">
+                                    ДОПОЛНИТЕЛЬНАЯ ЛИЦЕНЗИЯ ДЛЯ ОТОБРАЖЕНИЯ НА БОЛЬШОМ LED ДИСПЛЕЕ
+                                    <span class="calc__more">Подробнее</span>
+                                </span>
+                                <div class="calc__right">
+                                    <div class="calc__price">
+                                        <span>
+                                            5 000
+                                            <img src="img/inform-kioski/price.svg" alt="Рубль">
+                                        </span>
+                                    </div>
+                                    <div class="calc__count">
+                                        <div class="calc__button">
+                                            <img src="img/electronic-queue/minus.svg" alt="Минус">
+                                        </div>
+                                        <span>0</span>
+                                        <div class="calc__button">
+                                            <img src="img/electronic-queue/plus.svg" alt="Плюс">
+                                        </div>
+                                    </div>
+                                    <div class="calc__sum">
+                                        <span>0</span>
+                                        <img src="img/inform-kioski/price.svg" alt="Рубль">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="calc__row">
+                                <span class="calc__name">
+                                    МОДУЛЬ ДЛЯ РАЗМЕЩЕНИЯ В ИНТЕРФЕЙСЕ СОБСТВЕННЫХ ИНФОРМАЦИОННЫХ МАТЕРИАЛОВ
+                                    <span class="calc__more">Подробнее</span>
+                                </span>
+                                <div class="calc__right">
+                                    <div class="calc__price">
+                                        <span>
+                                            24 000
+                                            <img src="img/inform-kioski/price.svg" alt="Рубль">
+                                        </span>
+                                    </div>
+                                    <div class="calc__count">
+                                        <div class="calc__button">
+                                            <img src="img/electronic-queue/minus.svg" alt="Минус">
+                                        </div>
+                                        <span>0</span>
+                                        <div class="calc__button">
+                                            <img src="img/electronic-queue/plus.svg" alt="Плюс">
+                                        </div>
+                                    </div>
+                                    <div class="calc__sum">
+                                        <span>0</span>
+                                        <img src="img/inform-kioski/price.svg" alt="Рубль">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="calc__row">
+                                <span class="calc__name">
+                                    МОДУЛЬ ОЦЕНКИ КАЧЕСТВА ОБСЛУЖИВАНИЯ КЛИЕНТОВ
+                                    <span class="calc__more">Подробнее</span>
+                                </span>
+                                <div class="calc__right">
+                                    <div class="calc__price">
+                                        <span>
+                                            18 000
+                                            <img src="img/inform-kioski/price.svg" alt="Рубль">
+                                        </span>
+                                    </div>
+                                    <div class="calc__count">
+                                        <div class="calc__button">
+                                            <img src="img/electronic-queue/minus.svg" alt="Минус">
+                                        </div>
+                                        <span>0</span>
+                                        <div class="calc__button">
+                                            <img src="img/electronic-queue/plus.svg" alt="Плюс">
+                                        </div>
+                                    </div>
+                                    <div class="calc__sum">
+                                        <span>0</span>
+                                        <img src="img/inform-kioski/price.svg" alt="Рубль">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="calc__block">
+                        <h3 class="calc__title">
+                            СВЕТОДИОДНЫЕ ТАБЛО
+                        </h3>
+                        <div class="calc__table">
+                            <div class="calc__row">
+                                <span class="calc__name">
+                                    СВЕТОДИОДНОЕ ТАБЛО (3-Х СИМВОЛЬНОЕ, ЦИФРОВОЕ)
+                                    <span class="calc__more">Подробнее</span>
+                                </span>
+                                <div class="calc__right">
+                                    <div class="calc__price">
+                                        <span>
+                                            8 500
+                                            <img src="img/inform-kioski/price.svg" alt="Рубль">
+                                        </span>
+                                    </div>
+                                    <div class="calc__count">
+                                        <div class="calc__button">
+                                            <img src="img/electronic-queue/minus.svg" alt="Минус">
+                                        </div>
+                                        <span>0</span>
+                                        <div class="calc__button">
+                                            <img src="img/electronic-queue/plus.svg" alt="Плюс">
+                                        </div>
+                                    </div>
+                                    <div class="calc__sum">
+                                        <span>0</span>
+                                        <img src="img/inform-kioski/price.svg" alt="Рубль">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="calc__row">
+                                <span class="calc__name">
+                                    СВЕТОДИОДНОЕ ТАБЛО (4-Х СИМВОЛЬНОЕ, ПЕРВЫЙ СИМВОЛ БУКВЕННЫЙ + ТРИ СИМВОЛА ЦИФРОВЫХ)
+                                    <span class="calc__more">Подробнее</span>
+                                </span>
+                                <div class="calc__right">
+                                    <div class="calc__price">
+                                        <span>
+                                            13 000
+                                            <img src="img/inform-kioski/price.svg" alt="Рубль">
+                                        </span>
+                                    </div>
+                                    <div class="calc__count">
+                                        <div class="calc__button">
+                                            <img src="img/electronic-queue/minus.svg" alt="Минус">
+                                        </div>
+                                        <span>0</span>
+                                        <div class="calc__button">
+                                            <img src="img/electronic-queue/plus.svg" alt="Плюс">
+                                        </div>
+                                    </div>
+                                    <div class="calc__sum">
+                                        <span>0</span>
+                                        <img src="img/inform-kioski/price.svg" alt="Рубль">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="calc__row">
+                                <span class="calc__name">
+                                    СВЕТОДИОДНОЕ ТАБЛО С ДОПОЛНИТЕЛЬНОЙ ИНФОРМАЦИЕЙ
+                                    <span class="calc__more">Подробнее</span>
+                                </span>
+                                <div class="calc__right">
+                                    <div class="calc__price">
+                                        <span>
+                                            14 000
+                                            <img src="img/inform-kioski/price.svg" alt="Рубль">
+                                        </span>
+                                    </div>
+                                    <div class="calc__count">
+                                        <div class="calc__button">
+                                            <img src="img/electronic-queue/minus.svg" alt="Минус">
+                                        </div>
+                                        <span>0</span>
+                                        <div class="calc__button">
+                                            <img src="img/electronic-queue/plus.svg" alt="Плюс">
+                                        </div>
+                                    </div>
+                                    <div class="calc__sum">
+                                        <span>0</span>
+                                        <img src="img/inform-kioski/price.svg" alt="Рубль">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="calc__row">
+                                <span class="calc__name">
+                                    СВЕТОДИОДНОЕ ТАБЛО УЛИЧНОЕ (3-Х СИМВОЛЬНОЕ, ЦИФРЫ)
+                                    <span class="calc__more">Подробнее</span>
+                                </span>
+                                <div class="calc__right">
+                                    <div class="calc__price">
+                                        <span>
+                                            13 000
+                                            <img src="img/inform-kioski/price.svg" alt="Рубль">
+                                        </span>
+                                    </div>
+                                    <div class="calc__count">
+                                        <div class="calc__button">
+                                            <img src="img/electronic-queue/minus.svg" alt="Минус">
+                                        </div>
+                                        <span>0</span>
+                                        <div class="calc__button">
+                                            <img src="img/electronic-queue/plus.svg" alt="Плюс">
+                                        </div>
+                                    </div>
+                                    <div class="calc__sum">
+                                        <span>0</span>
+                                        <img src="img/inform-kioski/price.svg" alt="Рубль">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="calc__row">
+                                <span class="calc__name">
+                                    МАТРИЧНОЕ СВЕТОДИОДНОЕ ТАБЛО
+                                    <span class="calc__more">Подробнее</span>
+                                </span>
+                                <div class="calc__right">
+                                    <div class="calc__price">
+                                        <span>
+                                            13 000
+                                            <img src="img/inform-kioski/price.svg" alt="Рубль">
+                                        </span>
+                                    </div>
+                                    <div class="calc__count">
+                                        <div class="calc__button">
+                                            <img src="img/electronic-queue/minus.svg" alt="Минус">
+                                        </div>
+                                        <span>0</span>
+                                        <div class="calc__button">
+                                            <img src="img/electronic-queue/plus.svg" alt="Плюс">
+                                        </div>
+                                    </div>
+                                    <div class="calc__sum">
+                                        <span>0</span>
+                                        <img src="img/inform-kioski/price.svg" alt="Рубль">
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="calc__row">
+                                <span class="calc__name">
+                                    МАТРИЧНОЕ СВЕТОДИОДНОЕ ТАБЛО ДВУХСТРОЧНОЕ
+                                    <span class="calc__more">Подробнее</span>
+                                </span>
+                                <div class="calc__right">
+                                    <div class="calc__price">
+                                        <span>
+                                            16 000
+                                            <img src="img/inform-kioski/price.svg" alt="Рубль">
+                                        </span>
+                                    </div>
+                                    <div class="calc__count">
+                                        <div class="calc__button">
+                                            <img src="img/electronic-queue/minus.svg" alt="Минус">
+                                        </div>
+                                        <span>0</span>
+                                        <div class="calc__button">
+                                            <img src="img/electronic-queue/plus.svg" alt="Плюс">
+                                        </div>
+                                    </div>
+                                    <div class="calc__sum">
+                                        <span>0</span>
+                                        <img src="img/inform-kioski/price.svg" alt="Рубль">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="calc__block">
+                        <h3 class="calc__title">
+                            ДОПОЛНИТЕЛЬНЫЕ КОМПОНЕНТЫ
+                        </h3>
+                        <div class="calc__table">
+                            <div class="calc__row">
+                                <span class="calc__name">
+                                    ПУЛЬТ ОПЕРАТОРА (ИСПОЛЬЗУЕТСЯ ПРИ НЕВОЗМОЖНОСТИ ПРИМЕНИТЬ БЕСПЛАТНУЮ ВЫЗЫВНУЮ УТИЛИТУ, УСТАНАВЛИВАЕМУЮ НА КОМПЬЮТЕР СПЕЦИАЛИСТА)
+                                    <span class="calc__more">Подробнее</span>
+                                </span>
+                                <div class="calc__right">
+                                    <div class="calc__price">
+                                        <span>
+                                            7 000
+                                            <img src="img/inform-kioski/price.svg" alt="Рубль">
+                                        </span>
+                                    </div>
+                                    <div class="calc__count">
+                                        <div class="calc__button">
+                                            <img src="img/electronic-queue/minus.svg" alt="Минус">
+                                        </div>
+                                        <span>0</span>
+                                        <div class="calc__button">
+                                            <img src="img/electronic-queue/plus.svg" alt="Плюс">
+                                        </div>
+                                    </div>
+                                    <div class="calc__sum">
+                                        <span>0</span>
+                                        <img src="img/inform-kioski/price.svg" alt="Рубль">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="calc__row">
+                                <span class="calc__name">
+                                    ПУЛЬТ ОПЕРАТОРА С ИНДИКАТОРОМ ТАЛОНА (ИСПОЛЬЗУЕТСЯ ПРИ НЕВОЗМОЖНОСТИ ПРИМЕНИТЬ БЕСПЛАТНУЮ ВЫЗЫВНУЮ УТИЛИТУ, УСТАНАВЛИВАЕМУЮ НА КОМПЬЮТЕР СПЕЦИАЛИСТА)
+                                    <span class="calc__more">Подробнее</span>
+                                </span>
+                                <div class="calc__right">
+                                    <div class="calc__price">
+                                        <span>
+                                            9 000
+                                            <img src="img/inform-kioski/price.svg" alt="Рубль">
+                                        </span>
+                                    </div>
+                                    <div class="calc__count">
+                                        <div class="calc__button">
+                                            <img src="img/electronic-queue/minus.svg" alt="Минус">
+                                        </div>
+                                        <span>0</span>
+                                        <div class="calc__button">
+                                            <img src="img/electronic-queue/plus.svg" alt="Плюс">
+                                        </div>
+                                    </div>
+                                    <div class="calc__sum">
+                                        <span>0</span>
+                                        <img src="img/inform-kioski/price.svg" alt="Рубль">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="calc__row">
+                                <span class="calc__name">
+                                    БОЛЬШОЙ LED ДИСПЛЕЙ В ЗАЛ С ПОДКЛЮЧЕНИЕМ К СЕНСОРНОМУ ТЕРМИНАЛУ (В КОМПЛЕКТЕ ВИДЕОКАРТА ДЛЯ КИОСКА, НАСТЕННОЕ КРЕПЛЕНИЕ, КАБЕЛЬ HDMI 10 М.)
+                                    <span class="calc__more">Подробнее</span>
+                                </span>
+                                <div class="calc__right">
+                                    <div class="calc__price">
+                                        <span>
+                                            38 000
+                                            <img src="img/inform-kioski/price.svg" alt="Рубль">
+                                        </span>
+                                    </div>
+                                    <div class="calc__count">
+                                        <div class="calc__button">
+                                            <img src="img/electronic-queue/minus.svg" alt="Минус">
+                                        </div>
+                                        <span>0</span>
+                                        <div class="calc__button">
+                                            <img src="img/electronic-queue/plus.svg" alt="Плюс">
+                                        </div>
+                                    </div>
+                                    <div class="calc__sum">
+                                        <span>0</span>
+                                        <img src="img/inform-kioski/price.svg" alt="Рубль">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="calc__row">
+                                <span class="calc__name">
+                                    БОЛЬШОЙ LED ДИСПЛЕЙ В ЗАЛ С МОДУЛЕМ УПРАВЛЕНИЯ (В КОМПЛЕКТЕ МОДУЛЬ УПРАВЛЕНИЯ, КРОНШТЕЙН, БЛОК РОЗЕТОК, КАБЕЛЬ HDMI 3 М.)
+                                    <span class="calc__more">Подробнее</span>
+                                </span>
+                                <div class="calc__right">
+                                    <div class="calc__price">
+                                        <span>
+                                            60 000
+                                            <img src="img/inform-kioski/price.svg" alt="Рубль">
+                                        </span>
+                                    </div>
+                                    <div class="calc__count">
+                                        <div class="calc__button">
+                                            <img src="img/electronic-queue/minus.svg" alt="Минус">
+                                        </div>
+                                        <span>0</span>
+                                        <div class="calc__button">
+                                            <img src="img/electronic-queue/plus.svg" alt="Плюс">
+                                        </div>
+                                    </div>
+                                    <div class="calc__sum">
+                                        <span>0</span>
+                                        <img src="img/inform-kioski/price.svg" alt="Рубль">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="calc__row">
+                                <span class="calc__name">
+                                    БОЛЬШОЙ LED ДИСПЛЕЙ ДЛЯ ОТОБРАЖЕНИЯ РАСПИСАНИЯ ВРАЧЕЙ
+                                    <span class="calc__more">Подробнее</span>
+                                </span>
+                                <div class="calc__right">
+                                    <div class="calc__price">
+                                        <span>
+                                            60 000
+                                            <img src="img/inform-kioski/price.svg" alt="Рубль">
+                                        </span>
+                                    </div>
+                                    <div class="calc__count">
+                                        <div class="calc__button">
+                                            <img src="img/electronic-queue/minus.svg" alt="Минус">
+                                        </div>
+                                        <span>0</span>
+                                        <div class="calc__button">
+                                            <img src="img/electronic-queue/plus.svg" alt="Плюс">
+                                        </div>
+                                    </div>
+                                    <div class="calc__sum">
+                                        <span>0</span>
+                                        <img src="img/inform-kioski/price.svg" alt="Рубль">
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="calc__row">
+                                <span class="calc__name">
+                                    МОБИЛЬНЫЙ LED ДИСПЛЕЙ В ЗАЛ С ОТДЕЛЬНЫМ МОДУЛЕМ УПРАВЛЕНИЯ (В КОМПЛЕКТЕ МОДУЛЬ УПРАВЛЕНИЯ, МОБИЛЬНАЯ СТОЙКА, БЛОК РОЗЕТОК, КАБЕЛЬ HDMI 3 М.)
+                                </span>
+                                <div class="calc__right">
+                                    <div class="calc__price">
+                                        <span>
+                                            95 000
+                                            <img src="img/inform-kioski/price.svg" alt="Рубль">
+                                        </span>
+                                    </div>
+                                    <div class="calc__count">
+                                        <div class="calc__button">
+                                            <img src="img/electronic-queue/minus.svg" alt="Минус">
+                                        </div>
+                                        <span>0</span>
+                                        <div class="calc__button">
+                                            <img src="img/electronic-queue/plus.svg" alt="Плюс">
+                                        </div>
+                                    </div>
+                                    <div class="calc__sum">
+                                        <span>0</span>
+                                        <img src="img/inform-kioski/price.svg" alt="Рубль">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="calc__row">
+                                <span class="calc__name">
+                                    ПУЛЬТ ОПЕРАТОРА НА БАЗЕ ПЛАНШЕТА (В КОМПЛЕКТЕ С ПЛАНШЕТОМ)
+                                </span>
+                                <div class="calc__right">
+                                    <div class="calc__price">
+                                        <span>
+                                            21 000
+                                            <img src="img/inform-kioski/price.svg" alt="Рубль">
+                                        </span>
+                                    </div>
+                                    <div class="calc__count">
+                                        <div class="calc__button">
+                                            <img src="img/electronic-queue/minus.svg" alt="Минус">
+                                        </div>
+                                        <span>0</span>
+                                        <div class="calc__button">
+                                            <img src="img/electronic-queue/plus.svg" alt="Плюс">
+                                        </div>
+                                    </div>
+                                    <div class="calc__sum">
+                                        <span>0</span>
+                                        <img src="img/inform-kioski/price.svg" alt="Рубль">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="calc__row">
+                                <span class="calc__name">
+                                    ПУЛЬТ ОЦЕНКИ КАЧЕСТВА ОБСЛУЖИВАНИЯ КЛИЕНТОВ
+                                    <span class="calc__more">Подробнее</span>
+                                </span>
+                                <div class="calc__right">
+                                    <div class="calc__price">
+                                        <span>
+                                            7 000
+                                            <img src="img/inform-kioski/price.svg" alt="Рубль">
+                                        </span>
+                                    </div>
+                                    <div class="calc__count">
+                                        <div class="calc__button">
+                                            <img src="img/electronic-queue/minus.svg" alt="Минус">
+                                        </div>
+                                        <span>0</span>
+                                        <div class="calc__button">
+                                            <img src="img/electronic-queue/plus.svg" alt="Плюс">
+                                        </div>
+                                    </div>
+                                    <div class="calc__sum">
+                                        <span>0</span>
+                                        <img src="img/inform-kioski/price.svg" alt="Рубль">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="calc__row">
+                                <span class="calc__name">
+                                    АКУСТИЧЕСКАЯ СИСТЕМА, ПОДКЛЮЧАЕМАЯ К СЕНСОРНОМУ КИОСКУ (УСИЛИТЕЛЬ, 2 КОЛОНКИ)
+                                    <span class="calc__more">Подробнее</span>
+                                </span>
+                                <div class="calc__right">
+                                    <div class="calc__price">
+                                        <span>
+                                            19 500
+                                            <img src="img/inform-kioski/price.svg" alt="Рубль">
+                                        </span>
+                                    </div>
+                                    <div class="calc__count">
+                                        <div class="calc__button">
+                                            <img src="img/electronic-queue/minus.svg" alt="Минус">
+                                        </div>
+                                        <span>0</span>
+                                        <div class="calc__button">
+                                            <img src="img/electronic-queue/plus.svg" alt="Плюс">
+                                        </div>
+                                    </div>
+                                    <div class="calc__sum">
+                                        <span>0</span>
+                                        <img src="img/inform-kioski/price.svg" alt="Рубль">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="calc__row">
+                                <span class="calc__name">
+                                    ТЕРМОБУМАГА (3000 ТАЛОНОВ В ОДНОМ РУЛОНЕ)
+                                </span>
+                                <div class="calc__right">
+                                    <div class="calc__price">
+                                        <span>
+                                            480
+                                            <img src="img/inform-kioski/price.svg" alt="Рубль">
+                                        </span>
+                                    </div>
+                                    <div class="calc__count">
+                                        <div class="calc__button">
+                                            <img src="img/electronic-queue/minus.svg" alt="Минус">
+                                        </div>
+                                        <span>0</span>
+                                        <div class="calc__button">
+                                            <img src="img/electronic-queue/plus.svg" alt="Плюс">
+                                        </div>
+                                    </div>
+                                    <div class="calc__sum">
+                                        <span>0</span>
+                                        <img src="img/inform-kioski/price.svg" alt="Рубль">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="calc__block">
+                        <h3 class="calc__title">
+                            ОПЦИИ
+                        </h3>
+                        <div class="calc__table">
+                            <div class="calc__row">
+                                <span class="calc__name">
+                                    КОНФИГУРАТОР ГРАФИЧЕСКОГО ИНТЕРФЕЙСА
+                                    <span class="calc__more">Подробнее</span>
+                                </span>
+                                <div class="calc__right">
+                                    <div class="calc__price">
+                                        <span>
+                                            24 000
+                                            <img src="img/inform-kioski/price.svg" alt="Рубль">
+                                        </span>
+                                    </div>
+                                    <div class="calc__count">
+                                        <div class="calc__button">
+                                            <img src="img/electronic-queue/minus.svg" alt="Минус">
+                                        </div>
+                                        <span>0</span>
+                                        <div class="calc__button">
+                                            <img src="img/electronic-queue/plus.svg" alt="Плюс">
+                                        </div>
+                                    </div>
+                                    <div class="calc__sum">
+                                        <span>0</span>
+                                        <img src="img/inform-kioski/price.svg" alt="Рубль">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="calc__row">
+                                <span class="calc__name">
+                                    МОДУЛЬ ПРЕДВАРИТЕЛЬНОЙ ЗАПИСИ В ИНТЕРФЕЙСЕ КИОСКА
+                                </span>
+                                <div class="calc__right">
+                                    <div class="calc__price">
+                                        <span>
+                                            24 000
+                                            <img src="img/inform-kioski/price.svg" alt="Рубль">
+                                        </span>
+                                    </div>
+                                    <div class="calc__count">
+                                        <div class="calc__button">
+                                            <img src="img/electronic-queue/minus.svg" alt="Минус">
+                                        </div>
+                                        <span>0</span>
+                                        <div class="calc__button">
+                                            <img src="img/electronic-queue/plus.svg" alt="Плюс">
+                                        </div>
+                                    </div>
+                                    <div class="calc__sum">
+                                        <span>0</span>
+                                        <img src="img/inform-kioski/price.svg" alt="Рубль">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="calc__row">
+                                <span class="calc__name">
+                                    УДАЛЕННАЯ ПУСКОНАЛАДКА И НАСТРОЙКА СИСТЕМЫ
+                                    <span class="calc__more">Подробнее</span>
+                                </span>
+                                <div class="calc__right">
+                                    <div class="calc__price">
+                                        <span>
+                                            15 000
+                                            <img src="img/inform-kioski/price.svg" alt="Рубль">
+                                        </span>
+                                    </div>
+                                    <div class="calc__count">
+                                        <div class="calc__button">
+                                            <img src="img/electronic-queue/minus.svg" alt="Минус">
+                                        </div>
+                                        <span>0</span>
+                                        <div class="calc__button">
+                                            <img src="img/electronic-queue/plus.svg" alt="Плюс">
+                                        </div>
+                                    </div>
+                                    <div class="calc__sum">
+                                        <span>0</span>
+                                        <img src="img/inform-kioski/price.svg" alt="Рубль">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="calc__row">
+                                <span class="calc__name">
+                                    ПО ОПЕРАТОРА WEB ВЕРСИЯ (ОДНА ЛИЦЕНЗИЯ)
+                                    <span class="calc__more">Подробнее</span>
+                                </span>
+                                <div class="calc__right">
+                                    <div class="calc__price">
+                                        <span>
+                                            3 000
+                                            <img src="img/inform-kioski/price.svg" alt="Рубль">
+                                        </span>
+                                    </div>
+                                    <div class="calc__count">
+                                        <div class="calc__button">
+                                            <img src="img/electronic-queue/minus.svg" alt="Минус">
+                                        </div>
+                                        <span>0</span>
+                                        <div class="calc__button">
+                                            <img src="img/electronic-queue/plus.svg" alt="Плюс">
+                                        </div>
+                                    </div>
+                                    <div class="calc__sum">
+                                        <span>0</span>
+                                        <img src="img/inform-kioski/price.svg" alt="Рубль">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="calc__row">
+                                <span class="calc__name">
+                                    ПРОГРАММНЫЙ МОДУЛЬ ДЛЯ ЗАПИСИ ПЕРЕГОВОРОВ СОТРУДНИКА С КЛИЕНТОМ
+                                    <span class="calc__more">Подробнее</span>
+                                </span>
+                                <div class="calc__right">
+                                    <div class="calc__price">
+                                        <span>
+                                            24 000
+                                            <img src="img/inform-kioski/price.svg" alt="Рубль">
+                                        </span>
+                                    </div>
+                                    <div class="calc__count">
+                                        <div class="calc__button">
+                                            <img src="img/electronic-queue/minus.svg" alt="Минус">
+                                        </div>
+                                        <span>0</span>
+                                        <div class="calc__button">
+                                            <img src="img/electronic-queue/plus.svg" alt="Плюс">
+                                        </div>
+                                    </div>
+                                    <div class="calc__sum">
+                                        <span>0</span>
+                                        <img src="img/inform-kioski/price.svg" alt="Рубль">
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="calc__row">
+                                <span class="calc__name">
+                                    РАСШИРЕННАЯ УТИЛИТА АДМИНИСТРАТОРА
+                                    <span class="calc__more">Подробнее</span>
+                                </span>
+                                <div class="calc__right">
+                                    <div class="calc__price">
+                                        <span>
+                                            18 000
+                                            <img src="img/inform-kioski/price.svg" alt="Рубль">
+                                        </span>
+                                    </div>
+                                    <div class="calc__count">
+                                        <div class="calc__button">
+                                            <img src="img/electronic-queue/minus.svg" alt="Минус">
+                                        </div>
+                                        <span>0</span>
+                                        <div class="calc__button">
+                                            <img src="img/electronic-queue/plus.svg" alt="Плюс">
+                                        </div>
+                                    </div>
+                                    <div class="calc__sum">
+                                        <span>0</span>
+                                        <img src="img/inform-kioski/price.svg" alt="Рубль">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="calc__row">
+                                <span class="calc__name">
+                                    СИСТЕМА СМС ОПОВЕЩЕНИЯ ПОСЕТИТЕЛЕЙ
+                                    <span class="calc__more">Подробнее</span>
+                                </span>
+                                <div class="calc__right">
+                                    <div class="calc__price">
+                                        <span>
+                                            18 000
+                                            <img src="img/inform-kioski/price.svg" alt="Рубль">
+                                        </span>
+                                    </div>
+                                    <div class="calc__count">
+                                        <div class="calc__button">
+                                            <img src="img/electronic-queue/minus.svg" alt="Минус">
+                                        </div>
+                                        <span>0</span>
+                                        <div class="calc__button">
+                                            <img src="img/electronic-queue/plus.svg" alt="Плюс">
+                                        </div>
+                                    </div>
+                                    <div class="calc__sum">
+                                        <span>0</span>
+                                        <img src="img/inform-kioski/price.svg" alt="Рубль">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="calc__row">
+                                <span class="calc__name">
+                                    СИСТЕМА ПРЕДВАРИТЕЛЬНОЙ ЗАПИСИ ЧЕРЕЗ ИНТЕРНЕТ (ВЕБ ИНТЕРФЕЙС)
+                                    <span class="calc__more">Подробнее</span>
+                                </span>
+                                <div class="calc__right">
+                                    <div class="calc__price">
+                                        <span>
+                                            24 000
+                                            <img src="img/inform-kioski/price.svg" alt="Рубль">
+                                        </span>
+                                    </div>
+                                    <div class="calc__count">
+                                        <div class="calc__button">
+                                            <img src="img/electronic-queue/minus.svg" alt="Минус">
+                                        </div>
+                                        <span>0</span>
+                                        <div class="calc__button">
+                                            <img src="img/electronic-queue/plus.svg" alt="Плюс">
+                                        </div>
+                                    </div>
+                                    <div class="calc__sum">
+                                        <span>0</span>
+                                        <img src="img/inform-kioski/price.svg" alt="Рубль">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="calc__row">
+                                <span class="calc__name">
+                                    СИСТЕМА ПРЕДВАРИТЕЛЬНОЙ ЗАПИСИ ЧЕРЕЗ ТЕРМИНАЛ И WEB ИНТЕРФЕЙС С РЕГИСТРАЦИЕЙ ЧЕРЕЗ ЛИЧНЫЙ КАБИНЕТ
+                                </span>
+                                <div class="calc__right">
+                                    <div class="calc__price">
+                                        <span>
+                                            48 000
+                                            <img src="img/inform-kioski/price.svg" alt="Рубль">
+                                        </span>
+                                    </div>
+                                    <div class="calc__count">
+                                        <div class="calc__button">
+                                            <img src="img/electronic-queue/minus.svg" alt="Минус">
+                                        </div>
+                                        <span>0</span>
+                                        <div class="calc__button">
+                                            <img src="img/electronic-queue/plus.svg" alt="Плюс">
+                                        </div>
+                                    </div>
+                                    <div class="calc__sum">
+                                        <span>0</span>
+                                        <img src="img/inform-kioski/price.svg" alt="Рубль">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="calc__row">
+                                <span class="calc__name">
+                                    РЕГИСТРАТОР ЗАПИСИ ПОКАЗАТЕЛЕЙ РАБОТЫ СЕНСОРНОГО КИОСКА
+                                    <span class="calc__more">Подробнее</span>
+                                </span>
+                                <div class="calc__right">
+                                    <div class="calc__price">
+                                        <span>
+                                            18 000
+                                            <img src="img/inform-kioski/price.svg" alt="Рубль">
+                                        </span>
+                                    </div>
+                                    <div class="calc__count">
+                                        <div class="calc__button">
+                                            <img src="img/electronic-queue/minus.svg" alt="Минус">
+                                        </div>
+                                        <span>0</span>
+                                        <div class="calc__button">
+                                            <img src="img/electronic-queue/plus.svg" alt="Плюс">
+                                        </div>
+                                    </div>
+                                    <div class="calc__sum">
+                                        <span>0</span>
+                                        <img src="img/inform-kioski/price.svg" alt="Рубль">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="calc__row">
+                                <span class="calc__name">
+                                    СОЗДАНИЕ ИНДИВИДУАЛЬНОГО ДИЗАЙНА ИНТЕРФЕЙСА КИОСКА
+                                    <span class="calc__more">Подробнее</span>
+                                </span>
+                                <div class="calc__right">
+                                    <div class="calc__price">
+                                        <span>
+                                            24 000
+                                            <img src="img/inform-kioski/price.svg" alt="Рубль">
+                                        </span>
+                                    </div>
+                                    <div class="calc__count">
+                                        <div class="calc__button">
+                                            <img src="img/electronic-queue/minus.svg" alt="Минус">
+                                        </div>
+                                        <span>0</span>
+                                        <div class="calc__button">
+                                            <img src="img/electronic-queue/plus.svg" alt="Плюс">
+                                        </div>
+                                    </div>
+                                    <div class="calc__sum">
+                                        <span>0</span>
+                                        <img src="img/inform-kioski/price.svg" alt="Рубль">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="calc__row">
+                                <span class="calc__name">
+                                    ЦЕНТРАЛИЗОВАННЫЙ СЕРВЕР ДЛЯ МОНИТОРИНГА И НАСТРОЙКИ СИСТЕМЫ С ВОЗМОЖНОСТЬЮ СБОРА СТАТИСТИКИ
+                                    <span class="calc__more">Подробнее</span>
+                                </span>
+                                <div class="calc__right">
+                                    <div class="calc__price">
+                                        <span>
+                                            96 000
+                                            <img src="img/inform-kioski/price.svg" alt="Рубль">
+                                        </span>
+                                    </div>
+                                    <div class="calc__count">
+                                        <div class="calc__button">
+                                            <img src="img/electronic-queue/minus.svg" alt="Минус">
+                                        </div>
+                                        <span>0</span>
+                                        <div class="calc__button">
+                                            <img src="img/electronic-queue/plus.svg" alt="Плюс">
+                                        </div>
+                                    </div>
+                                    <div class="calc__sum">
+                                        <span>0</span>
+                                        <img src="img/inform-kioski/price.svg" alt="Рубль">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="calc__divider"></div>
+
+                    <div class="calc__footer">
+                        <button class="calc__download">
+                            Скачать комерческое предложение
+                        </button>
+                        <div class="calc__order">
+                            <button class="calc__buy">
+                                Заказать
+                            </button>
+                            <div class="calc__divider-vertical"></div>
+                            <div class="calc__fullprice">
+                                <span class="calc__fullprice-title">
+                                    Итоговая цена:
+                                </span>
+                                <span class="calc__fullprice-value">
+                                    <span>0</span>
+                                    <img src="img/inform-kioski/price.svg" alt="Рубль">
+                                </span>
                             </div>
                         </div>
                     </div>
@@ -1037,8 +2020,38 @@
             </div>
         </section>
 
+
+        <!--Модальные окна-->
+        <div class="modal">
+            <div class="modal__outside"></div>
+            <div class="modal__body">
+                <img src="img/electronic-queue/plus.svg" alt="Закрыть" class="modal__close">
+                <p class="modal__text">
+                    В состав лицензии входит:<br>
+                    <br>
+                    1. Количество одновременно работающих операторов, включая по "Виртуальный пульт оператора" для
+                    установки на ПК сотрудников физические пульты вызова: до 5 операторов<br>
+                    2. Количество лицензий на модуль администрирования и статистики: 1 лицензия<br>
+                    3. Количество лицензий на модуль отображения состояния очереди и вызова посетителей для большого
+                    LED-дисплея в зал (центральный дисплей): 1 лицензия<br>
+                    4. Модуль голосового вызова клиентов. Женский, мужской голос или гонг, звуковое оповещение через
+                    динамики центрального дисплея.<br>
+                    5. Лицензия для ПО регистрации и печати талонов через сенсорный киоск.<br>
+                    6. Лицензия для ПО "Сервер", сервером СУО является сенсорный киоск.<br>
+                    7. Лицензия для ПО "Базовый конфигуратор интерфейса".<br>
+                    8. Лицензия для ПО "Базовая статистика". Статистика о работе всех специалистов за выбранный день,
+                    статистика о всех посетителях за выбранный день/период.<br>
+                    9. Количество лицензий на табло оператора: до 5 операторов.
+                </p>
+                <div class="modal__imgs">
+                    <img src="img/electronic-queue/option_1.jpg"
+                         alt='Стартовый пакет "АС система управления очередью" 5 операторов'>
+                </div>
+            </div>
+        </div>
+
         <!-- Главная форма -->
-        <section class="form section" id="form">
+        <section class="form sertion" id="form">
             <div class="form__container container">
                 <h2 class="form__title section__title">
                     Есть вопросы? Задайте их нам!
@@ -1167,6 +2180,7 @@
     <!-- Скрипты -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCu57SQSNsgt8dWS-oBrh12zuOM8JJ6X3g"></script>
+    <script src="js/mapCluster.js"></script>
     <script src="js/slick.js"></script>
     <script src="js/general.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
